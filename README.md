@@ -1,0 +1,2 @@
+# Fast Bullet
+ Fast Bullet is a simple online game that works on WebSocket. To play, you need to find a person who will be the host. He must choose his nickname and click on the become a host button. Then you can connect to it by clicking on the button with its name. The goal is to get a weapon and shoot first. The coordinates for users are set by the server. If the player is green, then he has a weapon in his hand. The size of the player varies depending on the size of the window, including dynamically
