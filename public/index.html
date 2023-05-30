@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+	<head>
+		<title>Fast Duel</title>
+		<link rel="stylesheet" href="res/style.css">
+		<meta charset="utf-8"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="res/anime.min.js"></script>
+		<script src="res/spawn-background.js" async></script>
+		<script src="res/script.js" defer></script>
+	</head>
+	<body name="body">
+		<header id="header">
+			<h1 id="name">Fast Bullet</h1>
+		</header>
+		<main id="main">
+			<section id="getId">
+				<label for="inp" class="inp">
+					<input type="text" id="inpT" placeholder="&nbsp;">
+					<span id="label">Введите Имя</span>
+					<span class="focus-bg"></span>
+				</label>
+			</section>
+			<section id = "startGame">
+				<button id = "startButton" onclick="startGame();">Начать дуэль!</button>
+			</section>
+		</main>
+		<section id="wait">
+			<h2 style="color: white;">Загрузка</h2>       
+			<img id="waitimg" src="http://static.tildacdn.com/tild3565-6432-4036-b865-633334643263/loading-thumb-gif-72.gif" style="height: 80px;">
+		</section>
+		<section id="win">
+			<h2>Вы победили!</h2>
+		</section>
+		<section id="lose">
+			<h2>Вы проиграли!</h2>
+		</section>
+		<section id="chooseServer">
+			<h2>Выберите противника</h2>
+			<div id="servers-container">
+				<div id="servers"></div>
+			</div>
+			<button id="choose" onclick="choose();">Стать хостом</button>
+		</section>
+		<section id = "game">
+			<div id="circle" onclick="killEnemy(event);"></div>
+			<button id="takeGun" onclick="readyToshoot();">Достать оружие!</button>
+		</section>
+		<section id="bullets">
+		</section>
+	</body>
+</html>
